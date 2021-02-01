@@ -73,3 +73,11 @@ a:hover {
 .active .item {
     display: block;
 }
+
+
+/* ---------------- Tablet & Desktop menu ---------------- */
+
+
+@media all and (min-width: 481px) {
+   
+}
