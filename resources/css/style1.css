@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav, a {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+
+
+/* ------------------- Menu mobile ------------------- */
+
+
+#navbarheader {
+    padding: 0 15px;
+    border-bottom: 1px solid grey;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.active .item {
+    display: block;
+}
+
+#resources a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#resources a:hover {
+    color: #187bcd;
+}
+
+
+
+/* ------------------- Main mobile ------------------- */
+
+#main-doc {
+    padding: 0 30px 30px 30px;
+}
+
+section {
+    margin: 40px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted grey;
+}
+
+section h2, section h3 {
+    margin: 15px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+
+@media all and (min-width: 480px) {
+   .container {
+       flex-direction: row;
+   }
+
+   img {
+    max-width: 320px;
+}
+
+
+/* ------------------- Tablet & Desktop menu ------------------- */
+
+   #navbarheader {
+       position: fixed;
+       left: 0;
+       height: 100%;
+       max-width: 30%;
+       border-right: 2px solid grey;
+   }
+
+   #navbarheader h1 {
+       text-align: center;
+       margin: 25px;
+   }
+
+   .item {
+       display: block;
+       text-align: left;
+       border-bottom: 1px solid grey;
+   }
+
+   .toggle {
+       display: none;
+   }
+
+
+
+
+
+   #main-doc {
+       margin-left: 30%;
+   }
+}
+
+@media all and (min-width: 768px) {
+    img {
+        max-width: 450px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    img {
+        max-width: 650px;
+    }
+}
